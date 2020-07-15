@@ -2,7 +2,9 @@ const express = require('express');
 const app = express();
 
 const { config } = require('./config/index');
-const moviesAPI = require('./routes/movies.js');
+const moviesAPI = require('./routes/movies');
+
+app.use(express.json());
 
 moviesAPI(app);
 
