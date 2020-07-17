@@ -11,7 +11,7 @@ function moviesAPI(app) {
     const { tags } = req.query;
     try {
         const movies = await moviesService.getMovies({ tags })
-
+        throw new Error('Error getting movies')
         res.status(200).json({
           data: movies,
           message: 'movie retrieved'
@@ -22,13 +22,14 @@ function moviesAPI(app) {
   })
 
   router.get('/:moviesId', async function(req, res, next) {
-    const { movieId } = req.params;
+    const { moviesId } = req.params;
+    console.log(req.params)
     try {
-        const movies = await moviesService.getMovie({ movieId })
+        const movies = await moviesService.getMovie({ moviesId })
 
         res.status(200).json({
           data: movies,
-          message: 'movie retrieved'
+          message: 'movie find'
         })
     } catch(err) {
       next(err)

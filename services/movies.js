@@ -11,9 +11,9 @@ class MoviesService {
     return movies || [];
   }
 
-  async getMovie({ movieId }) {
-    const movie = await this.mongoDB.get(this.collection, movieId)
-    return movie || [];
+  async getMovie({ moviesId }) {
+    const movie = await this.mongoDB.get(this.collection, moviesId)
+    return movie;
   }
 
   async createMovie({ movie }) {

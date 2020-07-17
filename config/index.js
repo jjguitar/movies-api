@@ -6,10 +6,10 @@ const config = {
     cors: process.env.CORS,
     dbUser: process.env.DB_USER,
     dbPassword: process.env.DB_PASSWORD,
-    dbHost: process.env.DB_HOST,
+    dbHostPrimary: process.env.DB_HOST_PRIMARY,
+    dbHostSecond1: process.env.DB_HOST_SECOND_1,
+    dbHostSecond2: process.env.DB_HOST_SECOND_2,
     dbName: process.env.DB_NAME
 };
 
-module.exports = {
-    config
-};
+module.exports = { config };
