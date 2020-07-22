@@ -11,7 +11,7 @@ const {
   logErrors,
   wrapErrors,
   errorHandler
-} = require('./utils/middleware/errorHandlers.js');
+} = require('./utils/middleware/errorHandler.js');
 
 const notFoundHandler = require('./utils/middleware/notFoundHandler');
 
