@@ -25,6 +25,11 @@
     "DB_HOST_PRIMARY": "@platzivideos-db-host-primary",
     "DB_HOST_SECOND_1": "@platzivideos-db-host-second-1",
     "DB_HOST_SECOND_2": "@platzivideos-db-host-second-2",
-    "DB_NAME": "@platzivideos-db-name"
+    "DB_NAME": "@platzivideos-db-name",
+    "DEFAULT_ADMIN_PASSWORD": "@default_admin_password",
+    "DEFAULT_USER_PASSWORD": "@default_user_password",
+    "AUTH_JWT_SECRET": "@auth_jwt_secret",
+    "PUBLIC_API_KEY_TOKEN": "@public_api_key_token",
+    "ADMIN_API_KEY_TOKEN": "@admin_api_key_token"
   }
 }
